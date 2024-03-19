@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import {
   CustomerReviews,
   Footer,
@@ -10,6 +9,7 @@ import {
   SuperQuality,
 } from "./sections";
 import Nav from "./components/Nav";
+import AnimatedSection from "./sections/AnimatedSection";
 
 const App = () => {
   return (
@@ -18,63 +18,27 @@ const App = () => {
       <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>
-      <motion.section
-        initial={{ opacity: 0, y: 300 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, type: "spring" }}
-        viewport={{ once: true }}
-        className="padding"
-      >
+      <AnimatedSection className="padding">
         <PopularProducts />
-      </motion.section>
-      <motion.section className="padding">
+      </AnimatedSection>
+      <section className="padding">
         <SuperQuality />
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 300 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, type: "spring" }}
-        viewport={{ once: true }}
-        className="padding-x py-10"
-      >
+      </section>
+      <AnimatedSection className="padding-x py-10">
         <Services />
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 300 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, type: "spring" }}
-        viewport={{ once: true }}
-        className="padding"
-      >
+      </AnimatedSection>
+      <AnimatedSection className="padding">
         <SpecialOffer />
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 300 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, type: "spring" }}
-        viewport={{ once: true }}
-        className="bg-pale-blue padding"
-      >
+      </AnimatedSection>
+      <AnimatedSection className="bg-pale-blue padding">
         <CustomerReviews />
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 300 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, type: "spring" }}
-        viewport={{ once: true }}
-        className="padding-x sm:py-32 py-16 w-full"
-      >
+      </AnimatedSection>
+      <AnimatedSection className="padding-x sm:py-32 py-16 w-full">
         <Subscribe />
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 300 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, type: "spring" }}
-        viewport={{ once: true }}
-        className="bg-black padding-x padding-t pb-8"
-      >
+      </AnimatedSection>
+      <AnimatedSection className="bg-black padding-x padding-t pb-8">
         <Footer />
-      </motion.section>
+      </AnimatedSection>
     </main>
   );
 };

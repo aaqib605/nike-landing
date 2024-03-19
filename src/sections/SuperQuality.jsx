@@ -6,7 +6,7 @@ const SuperQuality = () => {
   return (
     <section
       id="about-us"
-      className="flex flex-col lg:flex-row justify-between items-center gap-10 w-full max-container"
+      className="flex flex-col lg:flex-row justify-between items-center gap-10 w-full max-container overflow-hidden"
     >
       <motion.div
         initial={{ opacity: 0, x: -300 }}
