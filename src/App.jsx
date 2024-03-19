@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import {
   CustomerReviews,
   Footer,
@@ -17,27 +18,63 @@ const App = () => {
       <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>
-      <section className="padding">
+      <motion.section
+        initial={{ opacity: 0, y: 300 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, type: "spring" }}
+        viewport={{ once: true }}
+        className="padding"
+      >
         <PopularProducts />
-      </section>
-      <section className="padding">
+      </motion.section>
+      <motion.section className="padding">
         <SuperQuality />
-      </section>
-      <section className="padding-x py-10">
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 300 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, type: "spring" }}
+        viewport={{ once: true }}
+        className="padding-x py-10"
+      >
         <Services />
-      </section>
-      <section className="padding">
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 300 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, type: "spring" }}
+        viewport={{ once: true }}
+        className="padding"
+      >
         <SpecialOffer />
-      </section>
-      <section className="bg-pale-blue padding">
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 300 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, type: "spring" }}
+        viewport={{ once: true }}
+        className="bg-pale-blue padding"
+      >
         <CustomerReviews />
-      </section>
-      <section className="padding-x sm:py-32 py-16 w-full">
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 300 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, type: "spring" }}
+        viewport={{ once: true }}
+        className="padding-x sm:py-32 py-16 w-full"
+      >
         <Subscribe />
-      </section>
-      <section className="bg-black padding-x padding-t pb-8">
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 300 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, type: "spring" }}
+        viewport={{ once: true }}
+        className="bg-black padding-x padding-t pb-8"
+      >
         <Footer />
-      </section>
+      </motion.section>
     </main>
   );
 };

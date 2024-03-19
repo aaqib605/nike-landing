@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { shoe8 } from "../assets/images";
 import { Button } from "../components";
 
@@ -7,7 +8,13 @@ const SuperQuality = () => {
       id="about-us"
       className="flex flex-col lg:flex-row justify-between items-center gap-10 w-full max-container"
     >
-      <div className="flex flex-1 flex-col ">
+      <motion.div
+        initial={{ opacity: 0, x: -300 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5, delay: 0.5 }}
+        className="flex flex-1 flex-col "
+      >
         <h2 className="font-palanquin capitalize text-4xl lg:max-w-lg font-bold">
           We Provide You
           <span className="text-coral-red"> Super </span>
@@ -24,9 +31,15 @@ const SuperQuality = () => {
         <div className="mt-11">
           <Button label="View details" />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="flex-1 flex justify-center items-center">
+      <motion.div
+        initial={{ opacity: 0, x: 300 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, type: "spring", bounce: 0.5, delay: 0.5 }}
+        className="flex-1 flex justify-center items-center"
+      >
         <img
           src={shoe8}
           alt="product detail"
@@ -34,7 +47,7 @@ const SuperQuality = () => {
           height={522}
           className="object-contain"
         />
-      </div>
+      </motion.div>
     </section>
   );
 };

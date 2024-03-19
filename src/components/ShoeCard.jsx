@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const ShoeCard = ({ imgURL, changeBigShoeImg, bigShoeImg }) => {
   const handleClick = () => {
     if (bigShoeImg !== imgURL.bigShoe) {
@@ -6,7 +8,9 @@ const ShoeCard = ({ imgURL, changeBigShoeImg, bigShoeImg }) => {
   };
 
   return (
-    <div
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
       className={`border-2 rounded-xl ${
         bigShoeImg === imgURL.bigShoe
           ? "border-coral-red"
@@ -23,7 +27,7 @@ const ShoeCard = ({ imgURL, changeBigShoeImg, bigShoeImg }) => {
           className="object-contain"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
