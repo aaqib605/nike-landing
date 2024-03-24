@@ -54,21 +54,66 @@ export const products = [
     imgURL: shoe4,
     name: "Nike Air Jordan-01",
     price: "$200.20",
+    id: "1",
+    sizes: [
+      "UK 6 (EU 40)",
+      "UK 6.5",
+      "UK 7",
+      "UK 7.5",
+      "UK 8",
+      "UK 8.5",
+      "UK 9",
+      "UK 9.5",
+      "UK 10",
+      "UK 10.5",
+      "UK 11",
+    ],
+    description:
+      "Comfortable, durable and timeless—it's number 1 for a reason. This AF-1's classic '80s construction pairs with bold details for style that tracks whether you're on the court or on the go.",
   },
   {
     imgURL: shoe5,
     name: "Nike Air Jordan-10",
     price: "$210.20",
+    id: "2",
+    sizes: ["UK 7", "UK 7.5", "UK 8", "UK 8.5", "UK 9", "UK 9.5", "UK 11"],
+    description:
+      "Comfortable, durable and timeless—it's number 1 for a reason. This AF-1's classic '80s construction pairs with bold details for style that tracks whether you're on the court or on the go.",
   },
   {
     imgURL: shoe6,
     name: "Nike Air Jordan-100",
     price: "$220.20",
+    id: "3",
+    sizes: [
+      "UK 6 (EU 40)",
+      "UK 6.5",
+      "UK 7",
+      "UK 7.5",
+      "UK 8",
+      "UK 8.5",
+      "UK 9",
+      "UK 9.5",
+    ],
+    description:
+      "Comfortable, durable and timeless—it's number 1 for a reason. This AF-1's classic '80s construction pairs with bold details for style that tracks whether you're on the court or on the go.",
   },
   {
     imgURL: shoe7,
     name: "Nike Air Jordan-001",
     price: "$230.20",
+    id: "4",
+    sizes: [
+      "UK 6 (EU 40)",
+      "UK 6.5",
+      "UK 9",
+      "UK 9.5",
+      "UK 10",
+      "UK 10.5",
+      "UK 11",
+    ],
+    description:
+      "Comfortable, durable and timeless—it's number 1 for a reason. This AF-1's classic '80s construction pairs with bold details for style that tracks whether you're on the court or on the go.",
   },
 ];
 

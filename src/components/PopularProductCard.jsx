@@ -1,12 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { star } from "../assets/icons";
 
-const PopularProductCard = ({ imgURL, name, price }) => {
+const PopularProductCard = ({ imgURL, name, price, id }) => {
+  const navigate = useNavigate();
+
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.9 }}
       className="flex flex-1 flex-col w-full max-sm:w-full cursor-pointer"
+      onClick={() => navigate(`product/${id}`)}
     >
       <img src={imgURL} alt={name} className="w-[282px] h-[282px]" />
       <div className="mt-8 flex justify-start gap-2.5">
