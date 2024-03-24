@@ -17,7 +17,7 @@ const Hero = () => {
         initial={{ opacity: 0, x: -300 }}
         animate={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 1, type: "spring", bounce: 0.5 }}
+        transition={{ duration: 0.8, type: "spring", bounce: 0.5 }}
         className="relative w-full xl:w-2/5 flex flex-col justify-center items-start max-xl:padding-x pt-28 "
       >
         <p className="text-xl font-montserrat text-coral-red">
@@ -54,7 +54,7 @@ const Hero = () => {
       <motion.div
         initial={{ opacity: 0, x: 300 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 2 }}
         className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center"
       >
         <img
